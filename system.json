@@ -10,10 +10,7 @@
     },
     "authors": [
       {
-        "name": "",
-        "url": "",
-        "email": "",
-        "discord": ""
+        "name": "Christian Issac Davis"
       }
     ],
     "scripts": [
@@ -27,18 +24,6 @@
       "styles/system-styles-1.css",
       "styles/system-styles-2.css"
     ],
-    "packs": [
-      {
-        "name": "monsters",
-        "label": "My Monsters",
-        "type": "Actor"
-      },
-      {
-        "name": "items",
-        "label": "My Items",
-        "type": "Item"
-      }
-    ],
   "languages": [
       {
         "lang": "en",
@@ -51,9 +36,5 @@
     "gridDistance": 10,
     "gridUnits": "ft",
     "primaryTokenAttribute": "resources.health",
-    "secondaryTokenAttribute": "resources.power",
-    "url": "https://your/hosted/system/repo/",
-    "background": "systems/mysystem/assets/splash.webp",
-    "manifest": "https://your/hosted/system/repo/system.json",
-    "download": "https://your/packaged/download/archive.zip"
+    "secondaryTokenAttribute": "resources.power"
   }
