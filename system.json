@@ -14,15 +14,13 @@
       }
     ],
     "scripts": [
-      "scripts/system-script-1.js",
-      "scripts/system-script-2.js"
+      
     ],
     "esmodules": [
-      "scripts/system-module-1.mjs"
+      
     ],
     "styles": [
-      "styles/system-styles-1.css",
-      "styles/system-styles-2.css"
+      
     ],
   "languages": [
       {
@@ -30,11 +28,6 @@
         "name": "English",
         "path": "lang/en.json"
       }
-    ],
-    "socket": false,
-    "initiative": "1d20",
-    "gridDistance": 10,
-    "gridUnits": "ft",
-    "primaryTokenAttribute": "resources.health",
-    "secondaryTokenAttribute": "resources.power"
+    ]
+    
   }
