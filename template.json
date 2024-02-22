@@ -1,0 +1,83 @@
+{
+    "Actor":{
+        "types":["Player","NPC"],
+        "templates":{
+            "name": "",
+            "attributes":{
+                "brawn": {
+                    "min": 0,
+                    "value": 0,
+                    "max": 20
+                },
+                "smarts": {
+                    "min": 0,
+                    "value": 0,
+                    "max": 20
+                },
+                "guts": {
+                    "min": 0,
+                    "value": 0,
+                    "max": 20
+                }
+            },
+            "traning":{
+                "athletics":{
+                    "min": 0,
+                    "value": 0,
+                    "max": 5
+                },
+                "melee":{
+                    "min": 0,
+                    "value": 0,
+                    "max": 5
+                },
+                "stealth":{
+                    "min": 0,
+                    "value": 0,
+                    "max": 5
+                },
+                "communications":{
+                    "min": 0,
+                    "value": 0,
+                    "max": 5
+                },
+                "knowledge":{
+                    "min": 0,
+                    "value": 0,
+                    "max": 5
+                },
+                "mechanics":{
+                    "min": 0,
+                    "value": 0,
+                    "max": 5
+                },
+                "investigation":{
+                    "min": 0,
+                    "value": 0,
+                    "max": 5
+                },
+                "ranged":{
+                    "min": 0,
+                    "value": 0,
+                    "max": 5
+                },
+                "transport":{
+                    "min": 0,
+                    "value": 0,
+                    "max": 5
+                }
+            }
+        },
+        "Player":{
+            
+        }
+        
+    },
+    "Item":{
+        "types":["weapon","whisper"],
+        "templates": {
+            "description": "",
+            "damageCalc": ""
+        }
+    }
+}
