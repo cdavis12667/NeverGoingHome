@@ -11,9 +11,9 @@ Hooks.once('init', async function (){
 // here we unregister the default sheets in foundry and then register our sheets
 //These are just methods from the apis actors class
 Actors.unregisterSheet("core", ActorSheet);
-Actors.registerSheet("nevergoinghome",NeverGoingHomeActorSheet,{makeDefault: true});
+Actors.registerSheet("NeverGoingHome",NeverGoingHomeActorSheet,{makeDefault: true});
 Actors.unregisterSheet("core", ItemSheet);
-Actors.registerSheet("nevergoinghome",NeverGoingHomeItemSheet,{makeDefault: true});
+Actors.registerSheet("NeverGoingHome",NeverGoingHomeItemSheet,{makeDefault: true});
 //This is a singleton instance of the game class to set our actor documents and sheets
 game.nevergoinghome = {
     NeverGoingHomeActor,

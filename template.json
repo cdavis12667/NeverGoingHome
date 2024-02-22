@@ -2,7 +2,6 @@
     "Actor":{
         "types":["Player","NPC"],
         "templates":{
-            "name": "",
             "attributes":{
                 "brawn": {
                     "min": 0,
@@ -27,49 +26,33 @@
                     "max": 5
                 },
                 "melee":{
-                    "min": 0,
-                    "value": 0,
-                    "max": 5
+                    "value": 10
                 },
                 "stealth":{
-                    "min": 0,
-                    "value": 0,
-                    "max": 5
+                    "value": 10
                 },
                 "communications":{
-                    "min": 0,
-                    "value": 0,
-                    "max": 5
+                    "value": 10
                 },
                 "knowledge":{
-                    "min": 0,
-                    "value": 0,
-                    "max": 5
+                    "value": 10
                 },
                 "mechanics":{
-                    "min": 0,
-                    "value": 0,
-                    "max": 5
+                    "value": 10
                 },
                 "investigation":{
-                    "min": 0,
-                    "value": 0,
-                    "max": 5
+                    "value": 10
                 },
                 "ranged":{
-                    "min": 0,
-                    "value": 0,
-                    "max": 5
+                    "value": 10
                 },
                 "transport":{
-                    "min": 0,
-                    "value": 0,
-                    "max": 5
+                    "value": 10
                 }
             }
         },
-        "Player":{
-            
+        "Player":{ 
+            "templates": ["attributes", "traning"]  
         }
         
     },
