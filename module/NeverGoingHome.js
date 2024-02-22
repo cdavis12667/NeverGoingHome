@@ -6,6 +6,7 @@ import { NeverGoingHomeItemSheet } from ".item/NeverGoingHome-item-sheet.js"
 
 //This hook is a callback handler that which is only triggered once
 //init is the name the next part is the function that should be trigered
+//Basicly this entire hook will fire when foundry starts up
 Hooks.once('init', async function (){
 // here we unregister the default sheets in foundry and then register our sheets
 //These are just methods from the apis actors class
