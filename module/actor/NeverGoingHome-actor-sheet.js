@@ -11,6 +11,9 @@ return foundry.utils.mergeObject(super.defaultOptions, {
     height: 600,
 });
 }
+get template() {
+    return `systems/NeverGoingHome/templates/actor/actor-${this.actor.type}-sheet.html`;
+  }
 //Overiding with the super constructor for formApplication 
 getData(){
     const context = super.getData();

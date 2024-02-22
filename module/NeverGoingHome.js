@@ -16,14 +16,8 @@ Actors.unregisterSheet("core", ItemSheet);
 Actors.registerSheet("nevergoinghome",NeverGoingHomeItemSheet,{makeDefault: true});
 //This is a singleton instance of the game class to set our actor documents and sheets
 game.nevergoinghome = {
-    apps: {
-        NeverGoingHomeActorSheet,
-        NeverGoingHomeItemSheet
-    },
-    entity: {
-        NeverGoingHomeActor,
-        NeverGoingHomeItem,
-    } 
+    NeverGoingHomeActor,
+    NeverGoingHomeItem
 };
 //Here we once agian just set up our classes actor and item are defined classes in the api
 CONFIG.Actor.documentClass = NeverGoingHomeActor;
