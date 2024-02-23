@@ -7,7 +7,19 @@
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
       <div class="att-head">
         <label for="system.guts.value"> Guts</label>
-        <input type="text" name="system.guts.value" value="{{system.guts.value}}" data-dtype="Number"/>
+        <input type="number" name="system.guts.value" value="{{system.guts.value}}" data-dtype="Number"/>
+        <span>/</span>
+        <input type="number" name="system.guts.max" value="{{system.guts.max}}" data-dtype="Number"/>
+        <span> </span>
+         <label for="system.smarts.value"> Smarts</label>
+        <input type="number" name="system.smarts.value" value="{{system.smarts.value}}" data-dtype="Number"/>
+        <span>/</span>
+        <input type="number" name="system.smarts.max" value="{{system.smarts.max}}" data-dtype="Number"/>
+        <span> </span>
+         <label for="system.brawn.value"> Brawn</label>
+        <input type="number" name="system.brawn.value" value="{{system.brawn.value}}" data-dtype="Number"/>
+        <span>/</span>
+        <input type="number" name="system.brawn.max" value="{{system.brawn.max}}" data-dtype="Number"/>
       </div>
 
     </div>

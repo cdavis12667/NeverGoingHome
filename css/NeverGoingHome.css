@@ -1,2 +1,7 @@
+/* this should add a 3 colum grid*/
+.grid-3column {
+    grid-column: span 3 / span 3;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 
 
