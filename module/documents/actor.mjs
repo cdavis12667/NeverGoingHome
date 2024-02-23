@@ -14,6 +14,13 @@ export class NeverGoingHomeActor extends Actor {
         this._prepareCharacterData(actorData);
         this._prepareNpcData(actorData);
       }
+       _prepareCharacterData(actorData) {
+    if (actorData.type !== 'player') return;
+    }
+    _prepareNpcData(actorData) {
+      if (actorData.type !== 'npc') return;
+    
+    }
 }
   
   

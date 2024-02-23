@@ -1,5 +1,5 @@
 {
-    "id": "NeverGoingHome",
+    "id": "nevergoinghome",
     "title": "Never Going Home",
     "description": "A TTRPG about supernatrual horrors in world war one.",
     "version": "0.1",
@@ -16,9 +16,7 @@
     "scripts": [
       
     ],
-    "esmodules": [
-      "module/NeverGoingHome.js"
-    ],
+    "esmodules": ["module/NeverGoingHome.mjs"],
     "styles": [
       
     ]

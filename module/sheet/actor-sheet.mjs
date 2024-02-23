@@ -5,8 +5,8 @@ export class NeverGoingHomeActorSheet extends ActorSheet{
 static get defaultOptions(){
 return foundry.utils.mergeObject(super.defaultOptions, {
     //array of css string classes
-    classes: ["NeverGoingHome", "sheet","actor"],
-    template: "systems/NeverGoingHome/templates/Actor/NeverGoingHome-Character-Sheet.html",
+    classes: ['nevergoinghome', 'sheet', 'actor'],
+    template: 'systems/NeverGoingHome/templates/actor/actor-sheet.html',
     width: 600,
     height: 600,
 });
@@ -17,7 +17,23 @@ get template() {
 //Overiding with the super constructor for formApplication 
 getData(){
     const context = super.getData();
-    context.systemData = context.data.data
-    return context;
-}
+    const actorData = context.data;
+    context.system = actorData.system;
+    context.flags = actorData.flags;
+    if (actorData.type == 'player') {
+        this._prepareItems(context);
+        
+      }
+  
+      if (actorData.type == 'npc') {
+        this._prepareItems(context);
+      }
+      return context;
+    }
+    _prepareItems(context) {
+        const gear = [];
+        const features = [];
+        context.gear = gear;
+        context.features = features;
+      }
 }

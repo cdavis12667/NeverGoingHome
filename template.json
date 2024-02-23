@@ -1,6 +1,6 @@
 {
     "Actor":{
-        "types":["Player","NPC"],
+        "types":["player","npc"],
         "templates":{
             "attributes":{
                 "brawn": {
