@@ -6,13 +6,13 @@ static get defaultOptions(){
 return foundry.utils.mergeObject(super.defaultOptions, {
     //array of css string classes
     classes: ['nevergoinghome', 'sheet', 'actor'],
-    template: 'systems/NeverGoingHome/templates/actor/actor-sheet.html',
+    template: 'systems/nevergoinghome/templates/actor/actor-sheet.html',
     width: 600,
     height: 600,
 });
 }
 get template() {
-    return `systems/NeverGoingHome/templates/actor/actor-${this.actor.type}-sheet.html`;
+    return `systems/nevergoinghome/templates/actor/actor-${this.actor.type}-sheet.html`;
   }
 //Overiding with the super constructor for formApplication 
 getData(){

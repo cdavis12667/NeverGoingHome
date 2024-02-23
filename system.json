@@ -16,7 +16,7 @@
     "scripts": [
       
     ],
-    "esmodules": ["module/NeverGoingHome.mjs"],
+    "esmodules": ["module/nevergoinghome.mjs"],
     "styles": [
       
     ]
