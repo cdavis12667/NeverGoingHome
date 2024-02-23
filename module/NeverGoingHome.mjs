@@ -1,32 +1,34 @@
-//Imports documents
-import { NeverGoingHomeActor } from './documents/actor.mjs';
-import { NeverGoingHomeItem } from './documents/item.mjs';
-//Import sheets
-import { NeverGoingHomeActorSheet } from './sheets/actor-sheet.mjs';
-import { NeverGoingHomeItemSheet } from './sheets/item-sheet.mjs';
+// Import document classes.
+import { NevergoinghomeActor } from './documents/actor.mjs';
+import { NevergoinghomeItem } from './documents/item.mjs';
+// Import sheet classes.
+import { NevergoinghomeActorSheet } from './sheets/actor-sheet.mjs';
+import { NevergoinghomeItemSheet  } from './sheets/item-sheet.mjs';
 
-//This hook is a callback handler that which is only triggered once
-//init is the name the next part is the function that should be trigered
-//Basicly this entire hook will fire when foundry starts up
-Hooks.once('init', function (){
+//Startup event hook
+Hooks.once('init', function () {
+  //Register to game class
+  game.nevergoinghome = {
+    NevergoinghomeActor,
+    NevergoinghomeItem,
+  };
 
-//This is a singleton instance of the game class to set our actor documents and sheets
-game.nevergoinghome = {
-    NeverGoingHomeActor,
-    NeverGoingHomeItem,
-};
-//Here we once agian just set up our classes actor and item are defined classes in the api
-CONFIG.Actor.documentClass = NeverGoingHomeActor;
-CONFIG.Item.documentClass = NeverGoingHomeItem;
-// here we unregister the default sheets in foundry and then register our sheets
-//These are just methods from the apis actors class
-Actors.unregisterSheet('core', ActorSheet);
-Actors.registerSheet('nevergoinghome', NeverGoingHomeActorSheet, {
-    makeDefault: true
-});
-
-Items.unregisterSheet('core', ItemSheet);
-  Items.registerSheet('nevergoinghome', NeverGoingHomeItemSheet, {
+ 
+  //Let the system know I'm using these classes
+  CONFIG.Actor.documentClass = NevergoinghomeActor;
+  CONFIG.Item.documentClass = NevergoinghomeItem;
+  
+  CONFIG.ActiveEffect.legacyTransferral = false;
+  // Register sheet class and get rid of the old ones
+  Actors.unregisterSheet('core', ActorSheet);
+  Actors.registerSheet('nevergoinghome', NevergoinghomeActorSheet, {
     makeDefault: true,
+    
+  });
+  Items.unregisterSheet('core', ItemSheet);
+  Items.registerSheet('nevergoinghome', NevergoinghomeItemSheet , {
+    makeDefault: true,
+    
   });
 });
+

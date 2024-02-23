@@ -1,23 +1,23 @@
 {
-    "id": "nevergoinghome",
-    "title": "Never Going Home",
-    "description": "A TTRPG about supernatrual horrors in world war one.",
-    "version": "0.1",
-    "compatibility": {
-      "minimum": "11",
-      "verified": "11",
-      "maximum": "11"
-    },
-    "authors": [
-      {
-        "name": "Christian Issac Davis"
-      }
-    ],
-    "scripts": [
+  "id": "nevergoinghome",
+  "title": "Never Going Home",
+  "description": "A World War One Game Of Supernatural Horror",
+  "authors": [
+    {
+      "name": "Christian Issac Davis"
       
-    ],
-    "esmodules": ["module/nevergoinghome.mjs"],
-    "styles": [
-      
-    ]
-  }
+    }
+  ],
+  "version": "0.1",
+  "compatibility": {
+    "minimum": 11,
+    "verified": "11.315"
+  },
+  "esmodules": ["module/nevergoinghome.mjs"],
+  "styles": ["css/nevergoinghome.css"],
+  "socket": false,
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power"
+}

@@ -1,66 +1,85 @@
 {
-    "Actor":{
-        "types":["player","npc"],
-        "templates":{
-            "attributes":{
-                "brawn": {
-                    "min": 0,
-                    "value": 0,
-                    "max": 20
-                },
-                "smarts": {
-                    "min": 0,
-                    "value": 0,
-                    "max": 20
-                },
-                "guts": {
-                    "min": 0,
-                    "value": 0,
-                    "max": 20
-                }
-            },
-            "traning":{
-                "athletics":{
-                    "min": 0,
-                    "value": 0,
-                    "max": 5
-                },
-                "melee":{
-                    "value": 10
-                },
-                "stealth":{
-                    "value": 10
-                },
-                "communications":{
-                    "value": 10
-                },
-                "knowledge":{
-                    "value": 10
-                },
-                "mechanics":{
-                    "value": 10
-                },
-                "investigation":{
-                    "value": 10
-                },
-                "ranged":{
-                    "value": 10
-                },
-                "transport":{
-                    "value": 10
-                }
-            }
+  "Actor": {
+    "types": ["character", "npc"],
+    "templates": {
+      "base": {
+        "guts": {
+          "value": 10,
+          "min": 0,
+          "max": 10
         },
-        "Player":{ 
-            "templates": ["attributes", "traning"]  
+        "smarts": {
+          "value": 10,
+          "min": 0,
+          "max": 10
+        },
+        "brawn": {
+          "value": 10,
+          "min": 0,
+          "max": 10
+        },
+        "Athletics": {
+          "value": 10
+        },
+        "Melee": {
+          "value": 10
+        },
+        "Stealth": {
+          "value": 10
+        },
+        "Communications": {
+          "value": 10
+        },
+        "Knowledge": {
+          "value": 10
+        },
+        "Mechanics": {
+          "value": 10
+        },
+        "Investigation": {
+          "value": 10
+        },
+        "Ranged": {
+          "value": 10
+        },
+        "Transport": {
+          "value": 10
+        },
+        "biography": ""
+      },
+    "character": {
+      "templates": ["base"],
+      "attributes": {
+        "level": {
+          "value": 1
         }
-        
+      }
+      }
     },
-    "Item":{
-        "types":["weapon","whisper"],
-        "templates": {
-            "description": "",
-            "damageCalc": ""
-        }
+    "npc": {
+      "templates": ["base"]
+      
     }
+  },
+  "Item": {
+    "types": ["item", "whisper"],
+    "templates": {
+      "base": {
+        "description": "",
+        "damage":{
+          "value": 1
+        }
+      }
+    },
+    "item": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0,
+      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+    },
+    "whisper": {
+      "templates": ["base"]
+    }
+    
+  }
 }
