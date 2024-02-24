@@ -9,6 +9,7 @@ export class NevergoinghomeActorSheet extends ActorSheet {
     });
   }
 //get the tempplate from my actor sheet
+//credit to adnd2e for this bit of code
   get template() {
     const path = 'systems/nevergoinghome/templates/actor';
     return `${path}/actor-${this.actor.type}-sheet.hbs`;
