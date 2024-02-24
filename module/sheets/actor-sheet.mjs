@@ -22,7 +22,6 @@ export class NevergoinghomeActorSheet extends ActorSheet {
     const actorData = context.data;
 
     context.system = actorData.system;
-    context.flags = actorData.flags;
 //Depending on the actor type we need to do diffrent things
 //the types is definied in json
     if (actorData.type == 'character') {

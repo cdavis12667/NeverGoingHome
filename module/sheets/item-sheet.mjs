@@ -21,7 +21,6 @@ export class NevergoinghomeItemSheet extends ItemSheet {
     const context = super.getData();
     const itemData = context.data;
     context.system = itemData.system;
-    context.flags = itemData.flags;
     return context;
   }
 

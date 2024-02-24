@@ -14,7 +14,7 @@ prepareDerivedData() {
   const itemData = this;
   //setting flags and system for easier time in html
   const systemData = itemData.system;
-  const flags = itemData.flags.nevergoinghome || {};
+  
   
 }
 
