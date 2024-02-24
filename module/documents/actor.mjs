@@ -12,7 +12,7 @@ export class NevergoinghomeActor extends Actor {
   prepareDerivedData() {
     //setting actor data
     const actorData = this;
-    //setting flahgs and system for easier time in html
+    //setting flags and system for easier time in html
     const systemData = actorData.system;
     const flags = actorData.flags.nevergoinghome || {};
     //running methods

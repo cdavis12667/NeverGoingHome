@@ -14,7 +14,7 @@ export class NevergoinghomeItemSheet extends ItemSheet {
     const path = 'systems/nevergoinghome/templates/item';
     return `${path}/item-${this.item.type}-sheet.hbs`;
   }
-  //getting Itemdata
+  
 
   getData() {
     const context = super.getData();

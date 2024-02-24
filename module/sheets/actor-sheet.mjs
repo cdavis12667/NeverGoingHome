@@ -10,7 +10,8 @@ export class NevergoinghomeActorSheet extends ActorSheet {
   }
 //get the tempplate from my actor sheet
   get template() {
-    return `systems/nevergoinghome/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+    const path = 'systems/nevergoinghome/templates/actor';
+    return `${path}/actor-${this.actor.type}-sheet.hbs`;
   }
 //get 
   getData() {
@@ -24,18 +25,15 @@ export class NevergoinghomeActorSheet extends ActorSheet {
 //Depending on the actor type we need to do diffrent things
 //the types is definied in json
     if (actorData.type == 'character') {
-      this._prepareItems(context);
+      
       
     }
 
     if (actorData.type == 'npc') {
-      this._prepareItems(context);
+     
     }
     return context;
   }
 
- //Might use this later empty for now
-  _prepareItems(context) {
-    return context;
-  }
+
 }
