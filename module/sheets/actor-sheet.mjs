@@ -4,7 +4,6 @@ export class NevergoinghomeActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['nevergoinghome', 'sheet', 'actor'],
-      template: 'systems/nevergoinghome/templates/actor/actor-sheet.hbs',
       width: 600,
       height: 600,
     });
