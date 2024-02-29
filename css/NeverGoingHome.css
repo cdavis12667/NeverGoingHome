@@ -1,7 +1,35 @@
-/* this should add a 3 colum grid*/
-.grid-3column {
-    grid-column: span 3 / span 3;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.flex,
+.flex-row-right
+{
+   display: flex;
+   flex-flow: row;
+   justify-content: end;
+   flex-direction: row;
 }
-
+.flex-col-center
+{
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   flex-direction: column;
+}
+.flex-col-right
+{
+   display: flex;
+   flex-flow: column;
+   justify-content: right;
+   flex-direction: column;
+}
+.flex-col-left
+{
+   display: flex;
+   flex-flow: column;
+   justify-content: left;
+   flex-direction: column;
+}
+.input,
+.input-small
+{
+   width: 100px;
+}
 
