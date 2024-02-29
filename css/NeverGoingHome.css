@@ -1,3 +1,13 @@
+@font-face {
+   font-family: "ErikaOrmig";
+   src: url("../assets/Erika Ormig.ttf");
+   font-weight: bold;
+}
+
+
+
+
+
 .flex,
 .flex-row-right
 {
@@ -42,5 +52,7 @@
 .body
 {
 background-image: url("../assets/OldPaper.jpg");
+font-family: "ErikaOrmig";
+
 }
 
