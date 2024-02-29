@@ -1,5 +1,5 @@
 <form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
-
+<section class="body">
   {{!-- Sheet Header --}}
   <header class="sheet-header">
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
@@ -12,10 +12,26 @@
     
     <div class="att-fields">
       
-        {{!--This is all the attributes--}}
+        
        <div class="flex flex-col-center">
         <div class="flex flex-col-left">
-          <input name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+          <div class="flex flex-row-left">
+            <label for="actor.name"> Name:</label>
+            <input name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+          </div>
+          <div class="flex flex-row-left">
+            <label for="actor.name"> Gender/Pronouns:</label>
+            <input name="system.charStuff.gender" type="text" value="{{system.charStuff.gender}}"/>
+          </div>
+          <div class="flex flex-row-left">
+            <label for="actor.name"> Ethnicity:</label>
+            <input name="system.charStuff.ethnicity" type="text" value="{{system.charStuff.ethnicity}}"/>
+          </div>
+          <div class="flex flex-row-left">
+            <label for="actor.name"> Nationality:</label>
+            <input name="system.charStuff.nationality" type="text" value="{{system.charStuff.nationality}}"/> 
+          </div>
+          
           
 
         </div>
@@ -31,7 +47,7 @@
 
 
 
-
+          {{!--This is all the attributes--}}
           <div class="flex flex-row-right">
               <label for="system.guts.value"> Guts</label>
               <input type="number" name="system.guts.value" value="{{system.guts.value}}" data-dtype="Number" size="100px"/>
@@ -60,6 +76,7 @@
   <section class="sheet-body">
 
     
+  </section>
   </section>
 </form>
 

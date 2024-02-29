@@ -6,6 +6,13 @@
    justify-content: end;
    flex-direction: row;
 }
+.flex-row-left
+{
+   display: flex;
+   flex-flow: row;
+   justify-content: left;
+   flex-direction: row; 
+}
 .flex-col-center
 {
    display: flex;
@@ -31,5 +38,9 @@
 .input-small
 {
    width: 100px;
+}
+.body
+{
+background-image: url("../assets/OldPaper.jpg");
 }
 

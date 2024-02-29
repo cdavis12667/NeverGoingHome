@@ -49,10 +49,13 @@
       },
     "character": {
       "templates": ["base"],
-      "attributes": {
+      "charStuff": {
         "level": {
           "value": 1
-        }
+        },
+        "gender":"",
+        "ethnicity":"",
+        "nationality":""
       }
       }
     },
