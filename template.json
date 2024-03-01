@@ -19,31 +19,40 @@
           "max": 10
         },
         "Athletics": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Melee": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Stealth": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Communications": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Knowledge": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Mechanics": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Investigation": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Ranged": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Transport": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "biography": ""
       },

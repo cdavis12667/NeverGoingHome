@@ -2,17 +2,12 @@
 <section class="body">
   {{!-- Sheet Header --}}
   <header class="sheet-header">
-    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-    
-    
-      
-     
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>  
+    <h1 class="text text-big">Soldier Record</h1>
+
   </header>
   <section class="attibutes">
-    
     <div class="att-fields">
-      
-        
        <div class="flex flex-col-center">
         <div class="flex flex-col-left">
           <div class="flex flex-row-left">
@@ -31,22 +26,7 @@
             <label for="actor.name"> Nationality:</label>
             <input name="system.charStuff.nationality" type="text" value="{{system.charStuff.nationality}}"/> 
           </div>
-          
-          
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
           {{!--This is all the attributes--}}
           <div class="flex flex-row-right">
               <label for="system.guts.value"> Guts</label>
@@ -69,13 +49,60 @@
         </div>
     </div>
   </section>
-
- 
-
   {{!-- Sheet Body --}}
   <section class="sheet-body">
+    <div class="flex flex-col-center">
+      {{!--This is where the skills will live--}}
+      <div class=" flex flex-row-center">
+        <input type="checkbox" name="system.Athletics.check" {{checked system.Athletics.check}}>
+        <label for="system.Athletics.value"> (Brawn) Athletics</label>
+        <input type="number" name="system.Athletics.value" value="{{system.Athletics.value}}" data-dtype="Number" size="100px"/>
+      </div>
+      <div class=" flex flex-row-center">
+        <input type="checkbox" name="system.Melee.check" {{checked system.Melee.check}}>
+        <label for="system.Melee.value"> (Brawn) Melee</label>
+        <input type="number" name="system.Melee.value" value="{{system.Melee.value}}" data-dtype="Number" size="100px"/>
+      </div>
+      <div class=" flex flex-row-center">
+        <input type="checkbox" name="system.Stealth.check" {{checked system.Stealth.check}}>
+        <label for="system.Stealth.value"> (Brawn) Stealth</label>
+        <input type="number" name="system.Stealth.value" value="{{system.Stealth.value}}" data-dtype="Number" size="100px"/>
+      </div>
+      <div class=" flex flex-row-center">
+        <input type="checkbox" name="system.Communications.check" {{checked system.Communications.check}}>
+        <label for="system.Communications.value"> (Smarts) Communications</label>
+        <input type="number" name="system.Communications.value" value="{{system.Communications.value}}" data-dtype="Number" size="100px"/>
+      </div>
+      <div class=" flex flex-row-center">
+        <input type="checkbox" name="system.Knowledge.check" {{checked system.Knowledge.check}}>
+        <label for="system.Knowledge.value"> (Smarts) Knowledge</label>
+        <input type="number" name="system.Knowledge.value" value="{{system.Knowledge.value}}" data-dtype="Number" size="100px"/>
+      </div>
+      <div class=" flex flex-row-center">
+        <input type="checkbox" name="system.Mechanics.check" {{checked system.Mechanics.check}}>
+        <label for="system.Mechanics.value"> (Smarts) Mechanics</label>
+        <input type="number" name="system.Mechanics.value" value="{{system.Mechanics.value}}" data-dtype="Number" size="100px"/>
+      </div>
+      <div class=" flex flex-row-center">
+        <input type="checkbox" name="system.Investigation.check" {{checked system.Investigation.check}}>
+        <label for="system.Investigation.value"> (Guts) Investigation</label>
+        <input type="number" name="system.Investigation.value" value="{{system.Investigation.value}}" data-dtype="Number" size="100px"/>
+      </div>
+      <div class=" flex flex-row-center">
+        <input type="checkbox" name="system.Ranged.check" {{checked system.Ranged.check}}>
+        <label for="system.Ranged.value"> (Guts) Ranged</label>
+        <input type="number" name="system.Ranged.value" value="{{system.Ranged.value}}" data-dtype="Number" size="100px"/>
+      </div>
+      <div class=" flex flex-row-center">
+        <input type="checkbox" name="system.Transport.check" {{checked system.Transport.check}}>
+        <label for="system.Transport.value"> (Guts) Transport</label>
+        <input type="number" name="system.Transport.value" value="{{system.Transport.value}}" data-dtype="Number" size="100px"/>
+      </div>
+      
+      
 
-    
+
+    </div>
   </section>
   </section>
 </form>

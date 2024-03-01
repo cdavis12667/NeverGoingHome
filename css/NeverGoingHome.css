@@ -9,6 +9,13 @@
 
 
 .flex,
+.flex-row-center
+{
+   display: flex;
+   flex-flow: row;
+   justify-content:center;
+   flex-direction: row;
+}
 .flex-row-right
 {
    display: flex;
@@ -48,6 +55,11 @@
 .input-small
 {
    width: 100px;
+}
+.text,
+text-big
+{
+   font-size: 50px;
 }
 .body
 {
