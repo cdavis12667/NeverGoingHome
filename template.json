@@ -64,7 +64,11 @@
         },
         "gender":"",
         "ethnicity":"",
-        "nationality":""
+        "nationality":"",
+        "corruption":{
+          "value":10
+        }
+        
       }
       }
     },

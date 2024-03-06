@@ -34,6 +34,11 @@ export class NevergoinghomeActorSheet extends ActorSheet {
     }
     return context;
   }
+  //The api makes it seems like I need to overide this with the super if I want the sheet to be editable
+  activateListeners(html)
+  {
+    super.activateListeners(html);
+  }
 
 
 }
