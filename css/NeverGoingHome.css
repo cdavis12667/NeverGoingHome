@@ -6,7 +6,15 @@
 
 
 
+.grid,
+.grid-2-col
+{
+   display: grid;
+   gap:  10px;
+   grid-column: span 2 / span 2;
 
+
+}
 
 .flex,
 .flex-row-center
@@ -43,6 +51,8 @@
    flex-flow: column;
    justify-content: right;
    flex-direction: column;
+   flex-grow: 1;
+
 }
 .flex-col-left
 {
@@ -50,11 +60,38 @@
    flex-flow: column;
    justify-content: left;
    flex-direction: column;
+   flex-grow: 1;
+}
+.flex-row-att{
+   display: flex;
+   flex-flow: row;
+   justify-self: auto;
+   gap: 100px;
+   flex-grow: 1;
+
+}
+.flex-row-stats
+{
+   display: flex;
+   flex-flow: row;
+   justify-content: center;
+   flex-direction: row;
+   flex-grow: 1;
+   max-width: 100px;
+
+}
+.flex-row-det
+{
+   display: flex;
+   flex-flow: row;
+   flex-direction: row;
+   flex-grow: 0;
+   max-width: 200px;
 }
 .input,
 .input-small
 {
-   width: 100px;
+   width: 10px;
 }
 .text,
 text-big
