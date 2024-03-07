@@ -76,9 +76,20 @@
 {
    display: flex;
    flex-flow: column;
-   justify-content: center;
+   align-content:space-evenly;
+   justify-content: left;
+   justify-items: left;
+   justify-self: left;
+   -ms-flex-item-align: start;
+   flex-direction:column;
+   column-gap: 30px;
+}
+.flex-col-whisper
+{
+   display: flex;
    flex-direction: column;
-   gap: 10px
+   flex-flow: column;
+   
 }
 .flex-row-att{
    display: flex;
@@ -90,11 +101,13 @@
 }
 .flex-row-body
 {
-   display: row;
+   display: flex;
    flex-flow: row;
-   justify-content: center;
-   gap: 10px;
-   flex-grow: 1;
+   justify-content:space-evenly;
+   justify-self:auto;
+   justify-items: left;
+   column-gap: 180px;
+   
 }
 .flex-row-stats
 {
@@ -110,11 +123,14 @@
 {
    display: flex;
    flex-flow: row;
-   justify-content: center;
+   justify-content: left;
+   justify-items: left;
+   justify-self: left;
    flex-direction: row;
-   flex-grow: 2;
-   max-width: 200px;
-   row-gap: 300px;
+   flex-grow: 1;
+   max-width: 50px;
+   column-gap: 5px;
+   
 }
 .flex-row-det
 {
@@ -124,11 +140,23 @@
    flex-grow: 1;
    max-width: 220px;
 }
+.flex-row-whisper
+{
+   display: flex;
+   flex-flow: row;
+   flex-direction: row;
+   justify-content: left;
+   justify-self: left;
+}
 .input,
 .input-small
 {
    
    width: 10px;
+}
+.input-tan
+{
+   background:tan;
 }
 .text,
 .text-big
@@ -139,15 +167,30 @@
 {
    font-size: 20px;
 }
+app,
+.window-app .window-content
+{
+border-radius: 0px;
+background-color: tan;
+padding: 0%;
+}
+
 .body
 {
 background-image: url("../assets/OldPaper.jpg");
 font-family: "ErikaOrmig";
+font-weight: bold;
+background-color: tan;
+
 
 }
 .editor
 {
    height: 100%;
+   width: 100%;
+   background: tan;
+   min-width: fit-content;
+   min-height: fit-content;
 }
 
 

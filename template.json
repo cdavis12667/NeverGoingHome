@@ -54,7 +54,22 @@
           "value": 10,
           "check": false
         },
-        "biography": ""
+        "whisper":
+        {
+          "path":"",
+          "wcheck":false,
+          "value": 10,
+          "desc":""
+        },
+        "whisperOne":
+        {
+          "path":"",
+          "wcheck":false,
+          "value": 10,
+          "desc":""
+        },
+        "biography": "",
+        "items": ""
       },
     "character": {
       "templates": ["base"],
