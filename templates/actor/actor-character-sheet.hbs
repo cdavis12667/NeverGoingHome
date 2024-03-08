@@ -2,8 +2,18 @@
 <section class="body">
   {{!-- Sheet Header --}}
   <header class="sheet-header">
-    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>  
-    <h1 class="text text-big">Soldier Record</h1>
+    
+    <div class="flexrow">
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>  
+      <h1 class="text text-big">Soldier Record</h1>
+      <div class="flex flex-col-level">
+        <label for="system.charStuff.level.value"> Level</label>
+        <input type="number" name="system.charStuff.level.value" value="{{system.charStuff.level.value}}" data-dtype="Number"/>
+      </div>
+
+    </div>
+    
+    
 
   </header>
   <section class="attibutes">
@@ -40,7 +50,7 @@
         </div>
 
         {{!--This is all the attributes--}}
-        <div class="flex flex-col-center"> 
+        <div class="flex flex-col-right"> 
           <div class="flex flex-row-stats">
               <label for="system.guts.value"> Guts</label>
               <input type="number" name="system.guts.value" value="{{system.guts.value}}" data-dtype="Number"/>
@@ -171,13 +181,14 @@
       </div>
         {{editor system.whisperOne.desc target="system.whisperOne.desc" button=true owner=owner editable=editable}}
         
+        
     </div>
     </div>
     </div>
     <div class="flex flex-col-center" >
       <h1 class="text text-medium">Items</h1>
-          {{editor system.items target="system.items" button=true owner=owner editable=editable}}
-          <span>t</span>
+          {{editor system.charStuff.items target="system.charStuff.items" button=true owner=owner editable=editable}}
+          
 
       </div>
     

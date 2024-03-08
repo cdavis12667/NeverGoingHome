@@ -68,8 +68,8 @@
           "value": 10,
           "desc":""
         },
-        "biography": "",
-        "items": ""
+        "biography": ""
+        
       },
     "character": {
       "templates": ["base"],
@@ -82,7 +82,8 @@
         "nationality":"",
         "corruption":{
           "value":10
-        }
+        },
+        "items":""
         
       }
       }
