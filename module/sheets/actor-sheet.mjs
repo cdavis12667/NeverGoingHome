@@ -4,14 +4,15 @@ export class NevergoinghomeActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['nevergoinghome', 'sheet', 'actor'],
-      template: 'systems/nevergoinghome/templates/actor/actor-sheet.hbs',
       width: 600,
       height: 600,
     });
   }
 //get the tempplate from my actor sheet
+//credit to adnd2e for this bit of code
   get template() {
-    return `systems/nevergoinghome/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+    const path = 'systems/nevergoinghome/templates/actor';
+    return `${path}/actor-${this.actor.type}-sheet.hbs`;
   }
 //get 
   getData() {
@@ -21,22 +22,23 @@ export class NevergoinghomeActorSheet extends ActorSheet {
     const actorData = context.data;
 
     context.system = actorData.system;
-    context.flags = actorData.flags;
 //Depending on the actor type we need to do diffrent things
 //the types is definied in json
     if (actorData.type == 'character') {
-      this._prepareItems(context);
+      
       
     }
 
     if (actorData.type == 'npc') {
-      this._prepareItems(context);
+     
     }
     return context;
   }
-
- //Might use this later empty for now
-  _prepareItems(context) {
-    return context;
+  //The api makes it seems like I need to overide this with the super if I want the sheet to be editable
+  activateListeners(html)
+  {
+    super.activateListeners(html);
   }
+
+
 }

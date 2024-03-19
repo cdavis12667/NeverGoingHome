@@ -19,40 +19,72 @@
           "max": 10
         },
         "Athletics": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Melee": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Stealth": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Communications": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Knowledge": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Mechanics": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Investigation": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Ranged": {
-          "value": 10
+          "value": 10,
+          "check": false
         },
         "Transport": {
-          "value": 10
+          "value": 10,
+          "check": false
+        },
+        "whisper":
+        {
+          "path":"",
+          "wcheck":false,
+          "value": 10,
+          "desc":""
+        },
+        "whisperOne":
+        {
+          "path":"",
+          "wcheck":false,
+          "value": 10,
+          "desc":""
         },
         "biography": ""
+        
       },
     "character": {
       "templates": ["base"],
-      "attributes": {
+      "charStuff": {
         "level": {
           "value": 1
-        }
+        },
+        "gender":"",
+        "ethnicity":"",
+        "nationality":"",
+        "corruption":{
+          "value":10
+        },
+        "items":""
+        
       }
       }
     },
@@ -73,9 +105,8 @@
     },
     "item": {
       "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+      "quantity": 1
+      
     },
     "whisper": {
       "templates": ["base"]

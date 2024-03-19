@@ -5,6 +5,18 @@ export class NevergoinghomeItem extends Item {
     
     super.prepareData();
   }
-
- 
+prepareBaseData() {
+  
 }
+
+prepareDerivedData() {
+  //setting actor data
+  const itemData = this;
+  //setting flags and system for easier time in html
+  const systemData = itemData.system;
+  
+  
+}
+
+}
+

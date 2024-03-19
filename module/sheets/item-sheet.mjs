@@ -10,17 +10,17 @@ export class NevergoinghomeItemSheet extends ItemSheet {
   }
 
   //Getting our template html
+  //credit to adnd2e for this bit of code
   get template() {
     const path = 'systems/nevergoinghome/templates/item';
     return `${path}/item-${this.item.type}-sheet.hbs`;
   }
-  //getting Itemdata
+  
 
   getData() {
     const context = super.getData();
     const itemData = context.data;
     context.system = itemData.system;
-    context.flags = itemData.flags;
     return context;
   }
 

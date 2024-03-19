@@ -1,23 +1,18 @@
 {
-  "id": "nevergoinghome",
-  "title": "Never Going Home",
-  "description": "A World War One Game Of Supernatural Horror",
   "authors": [
     {
       "name": "Christian Issac Davis"
-      
     }
   ],
-  "version": "0.1",
+  "id": "nevergoinghome",
+  "title": "Never Going Home",
+  "description": "A World War One Game Of Supernatural Horror",
+  "version": "0.2",
   "compatibility": {
     "minimum": 11,
     "verified": "11.315"
   },
   "esmodules": ["module/nevergoinghome.mjs"],
   "styles": ["css/nevergoinghome.css"],
-  "socket": false,
-  "gridDistance": 5,
-  "gridUnits": "ft",
-  "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power"
+  "socket": false
 }

@@ -11,14 +11,7 @@ Hooks.once('init', function () {
   game.nevergoinghome = {
     NevergoinghomeActor,
     NevergoinghomeItem,
-  };
-
- 
-  //Let the system know I'm using these classes
-  CONFIG.Actor.documentClass = NevergoinghomeActor;
-  CONFIG.Item.documentClass = NevergoinghomeItem;
-  
-  CONFIG.ActiveEffect.legacyTransferral = false;
+  }; 
   // Register sheet class and get rid of the old ones
   Actors.unregisterSheet('core', ActorSheet);
   Actors.registerSheet('nevergoinghome', NevergoinghomeActorSheet, {

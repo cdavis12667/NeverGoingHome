@@ -1,2 +1,219 @@
+@font-face {
+   font-family: "ErikaOrmig";
+   src: url("../assets/Erika Ormig.ttf");
+   font-weight: bold;
+}
+
+
+
+.grid,
+.grid-2-col
+{
+   display: grid;
+   gap:  10px;
+   grid-column: span 2 / span 2;
+
+
+}
+
+.flex,
+.flex-row-center
+{
+   display: flex;
+   flex-flow: row;
+   justify-content:center;
+   flex-direction: row;
+}
+.flex-row-right
+{
+   display: flex;
+   flex-flow: row;
+   justify-content: end;
+   flex-direction: row;
+}
+.flex-row-left
+{
+   display: flex;
+   flex-flow: row;
+   justify-content: left;
+   flex-direction: row; 
+}
+.flex-col-center
+{
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   flex-direction: column;
+   
+}
+.flex-col-right
+{
+   display: flex;
+   flex-flow: column;
+   justify-content: right;
+   justify-self: right;
+   justify-items: right;
+   flex-direction: column;
+   flex-grow: 1;
+   padding-right: 0%;
+   margin-right: 0%;
+   max-width: fit-content;
+
+}
+.flex-col-left
+{
+   display: flex;
+   flex-flow: column;
+   justify-content: left;
+   flex-direction: column;
+   flex-grow: 1;
+}
+.flex-col-corruption
+{
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   justify-self: center;
+   justify-items: center;
+   max-width: fit-content;
+   flex-direction: column;
+   max-width: 50px;
+   
+}
+.flex-col-skills
+{
+   display: flex;
+   flex-flow: column;
+   align-content:normal;
+   justify-content: left;
+   justify-items: left;
+   justify-self: left;
+   -ms-flex-item-align: start;
+   flex-direction:column;
+   column-gap: 30px;
+}
+.flex-col-whisper
+{
+   display: flex;
+   flex-direction: column;
+   flex-flow: column;
+   
+}
+.flex-col-level
+{
+   display: flex;
+   flex-direction: column;
+   flex-flow: column;
+   max-width: 50px;
+   
+}
+.flex-row-att{
+   display: flex;
+   flex-flow: row;
+   flex-direction: row;
+   justify-content: space-evenly;
+   justify-items:auto;
+   justify-self: auto;
+   column-gap: 100px;
+   flex-grow: 1;
+
+}
+.flex-row-body
+{
+   display: flex;
+   flex-flow: row;
+   justify-content:space-evenly;
+   justify-self:auto;
+   justify-items: left;
+   column-gap: 180px;
+   
+}
+.flex-row-stats
+{
+   display: flex;
+   flex-flow: row;
+   justify-content: right;
+   justify-self: right;
+   justify-items: right;
+   flex-direction: row;
+   flex-grow: 1;
+   max-width: 100px;
+
+}
+.flex-row-skills
+{
+   display: flex;
+   flex-flow: row;
+   justify-content: left;
+   justify-items: left;
+   justify-self: left;
+   flex-direction: row;
+   flex-grow: 1;
+   max-width: 50px;
+   column-gap: 5px;
+   
+}
+.flex-row-det
+{
+   display: flex;
+   flex-flow: row;
+   flex-direction: row;
+   flex-grow: 1;
+   max-width: 220px;
+}
+.flex-row-whisper
+{
+   display: flex;
+   flex-flow: row;
+   flex-direction: row;
+   justify-content: left;
+   justify-self: left;
+}
+
+.input,
+.input-small
+{
+   
+   width: 10px;
+}
+.input-tan
+{
+   background:tan;
+}
+.text,
+.text-big
+{
+   font-size: 50px;
+}
+.text-medium
+{
+   font-size: 20px;
+}
+app,
+.window-app .window-content
+{
+border-radius: 0px;
+background-color: tan;
+padding: 0%;
+}
+
+.body
+{
+background-image: url("../assets/OldPaper.jpg");
+font-family: "ErikaOrmig";
+font-weight: bold;
+background-color: tan;
+
+
+}
+.editor
+{
+   height: 100%;
+   width: 100%;
+   min-height: 250px;
+   min-width: 200px;
+   background: tan;
+   
+}
 
 
