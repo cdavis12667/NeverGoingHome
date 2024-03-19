@@ -98,7 +98,8 @@
           "Armor":{
             "value":1,
             "min":0,
-            "max":10}
+            "max":10},
+            "abilities":""
         }
       }
     }

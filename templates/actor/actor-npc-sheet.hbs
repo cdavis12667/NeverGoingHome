@@ -52,19 +52,116 @@
       </div>
         
   </div>
-        
-          
-
-
-    
-    
-
-      
-     
-
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-   
+   <div class="flex-header">
+    <div class="item-row">
+      <label class="label-body">Skills</label>
+      <label class="label-body">Abilities</label>
+      <label class="label-body">Whispers</label>
+    </div>
+
+    <div class="item-row-body">
+      <div class="flex-col-skills-npc">
+        <div class=" flex flex-row-skills">
+          <input type="checkbox" name="system.Athletics.check" {{checked system.Athletics.check}}>
+          <label for="system.Athletics.value"> (Brawn) </label>
+          <label for="system.Athletics.value"> Athletics</label>
+          <input type="number" name="system.Athletics.value" value="{{system.Athletics.value}}" data-dtype="Number" class="item-skill-size"/>
+        </div>
+
+        <div class=" flex flex-row-skills">
+          <input type="checkbox" name="system.Melee.check" {{checked system.Melee.check}}>
+          <label for="system.Melee.value"> (Brawn) </label>
+          <label for="system.Melee.value"> Melee</label>
+          <input type="number" name="system.Melee.value" value="{{system.Melee.value}}" data-dtype="Number"/>
+        </div>
+
+        <div class=" flex flex-row-skills">
+          <input type="checkbox" name="system.Stealth.check" {{checked system.Stealth.check}}>
+          <label for="system.Stealth.value"> (Brawn)</label>
+          <label for="system.Stealth.value"> Stealth</label>
+          <input type="number" name="system.Stealth.value" value="{{system.Stealth.value}}" data-dtype="Number"/>
+        </div>
+
+        <div class=" flex flex-row-skills">
+          <input type="checkbox" name="system.Communications.check" {{checked system.Communications.check}}>
+          <label for="system.Communications.value"> (Smarts)</label>
+          <label for="system.Communications.value"> Communications</label>
+          <input type="number" name="system.Communications.value" value="{{system.Communications.value}}" data-dtype="Number"/>
+        </div>
+
+        <div class=" flex flex-row-skills">
+          <input type="checkbox" name="system.Knowledge.check" {{checked system.Knowledge.check}}>
+          <label for="system.Knowledge.value"> (Smarts)</label>
+          <label for="system.Knowledge.value"> Knowledge</label>
+          <input type="number" name="system.Knowledge.value" value="{{system.Knowledge.value}}" data-dtype="Number"/>
+        </div>
+
+        <div class=" flex flex-row-skills">
+          <input type="checkbox" name="system.Mechanics.check" {{checked system.Mechanics.check}}>
+          <label for="system.Mechanics.value"> (Smarts)</label>
+          <label for="system.Mechanics.value"> Mechanics</label>
+          <input type="number" name="system.Mechanics.value" value="{{system.Mechanics.value}}" data-dtype="Number"/>
+        </div>
+
+        <div class=" flex flex-row-skills">
+          <input type="checkbox" name="system.Investigation.check" {{checked system.Investigation.check}}>
+          <label for="system.Investigation.value"> (Guts)</label>
+          <label for="system.Investigation.value"> Investigation</label>
+          <input type="number" name="system.Investigation.value" value="{{system.Investigation.value}}" data-dtype="Number"/>
+        </div>
+
+        <div class=" flex flex-row-skills">
+          <input type="checkbox" name="system.Ranged.check" {{checked system.Ranged.check}}>
+          <label for="system.Ranged.value"> (Guts) </label>
+          <label for="system.Ranged.value"> Ranged</label>
+          <input type="number" name="system.Ranged.value" value="{{system.Ranged.value}}" data-dtype="Number"/>
+        </div>
+
+        <div class=" flex flex-row-skills">
+          <input type="checkbox" name="system.Transport.check" {{checked system.Transport.check}}>
+          <label for="system.Transport.value"> (Guts) </label>
+          <label for="system.Transport.value"> Transport</label>
+          <input type="number" name="system.Transport.value" value="{{system.Transport.value}}" data-dtype="Number"/>
+        </div>
+      </div>
+
+      <div class="item-write-box">
+        {{editor system.npcStuff.abilities target="system.npcStuff.abilities" button=true owner=owner editable=editable}}
+      </div>
+      <div class="flex flex-col-whisper">
+      <div class="flex flex-row-whisper">
+        <input type="checkbox" name="system.whisper.wcheck" {{checked system.whisper.wcheck}}>
+        <label for="system.whisper.path"> Path: </label>
+        <input name="system.whisper.path" type="text" value="{{system.whisper.path}}"/>
+      </div>
+      <div class="flex flex-row-whisper">
+        <label for="system.whisper.value"> Rituals: </label>
+        <input type="number" name="system.whisper.value" value="{{system.whisper.value}}" data-dtype="Number"/>
+      </div>
+        {{editor system.whisper.desc target="system.whisper.desc" button=true owner=owner editable=editable}}
+
+        <div class="flex flex-row-whisper">
+        <input type="checkbox" name="system.whisperOne.wcheck" {{checked system.whisperOne.wcheck}}>
+        <label for="system.whisperOne.path"> Path: </label>
+        <input name="system.whisperOne.path" type="text" value="{{system.whisperOne.path}}"/>
+      </div>
+      <div class="flex flex-row-whisper">
+        <label for="system.whisperOne.value"> Rituals: </label>
+        <input type="number" name="system.whisperOne.value" value="{{system.whisperOne.value}}" data-dtype="Number"/>
+      </div>
+        {{editor system.whisperOne.desc target="system.whisperOne.desc" button=true owner=owner editable=editable}}  
+      </div>
+    </div>
+      
+        
+
+
+    </div>
+
+
+   </div>
     
   
     

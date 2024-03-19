@@ -73,7 +73,43 @@ font-size: 20px;
 /* NPC header stufff ENDS here */
 
 /* NPC body stuff STARTS here */
-
+.label-body
+{
+   font-size: 40px;
+}
+.item-skill-size
+{
+   max-width: 100px;
+   min-width: 50px;
+}
+.item-row-body
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items:stretch;
+   flex-grow: 1;
+   column-gap: 100px;
+   
+}
+.item-write-box
+{
+   display: flexbox;
+   min-height: 100px;
+   min-height: 100px;
+   justify-self: center;
+   
+}
+.flex-col-skills-npc
+{
+   display: flex;
+   flex-flow: column;
+   align-content:normal;
+   justify-self: left;
+   column-gap: 20px;
+   row-gap: 0px;
+   margin-right: 100px;
+}
 
 
 
@@ -167,6 +203,7 @@ font-size: 20px;
    -ms-flex-item-align: start;
    flex-direction:column;
    column-gap: 30px;
+   margin-right: 50px;
 }
 .flex-col-whisper
 {
@@ -225,7 +262,8 @@ font-size: 20px;
    justify-self: left;
    flex-direction: row;
    flex-grow: 1;
-   max-width: 50px;
+   max-width: 75px;
+   min-width: 75px;
    column-gap: 5px;
    
 }

@@ -4,8 +4,8 @@ export class NevergoinghomeActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['nevergoinghome', 'sheet', 'actor'],
-      width: 600,
-      height: 600,
+      width: 800,
+      height: 800,
     });
   }
 //get the tempplate from my actor sheet
