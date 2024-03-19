@@ -1,18 +1,71 @@
 <form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
-
+<section class="body">
   {{!-- Sheet Header --}}
-  <header class="sheet-header">
-    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+  <div class="flex-header">
+    <label class="item-header">NPC Sheet</label>
+    {{!-- This is name armor and initiative --}}
+      <div class="item-row">
+
+        <div class="item-name">
+          <label for="actor.name"> Name:</label>
+          <input name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+        </div>
+
+        <div class="item-initiative" >
+          <label for="system.npcStuff.InitiativeValue.value"> Initiative </label>
+          <label for="system.npcStuff.InitiativeValue.value"> Value:</label>
+          <input name="system.npcStuff.InitiativeValue.value" type="number" value="{{system.npcStuff.InitiativeValue.value}}" class="item-att-size"/>
+        </div>
+
+        <div class="item-armor">
+          <label for="system.npcStuff.Armor.value"> Armor:</label>
+          <input name="system.npcStuff.Armor.value" type="number" value="{{system.npcStuff.Armor.value}}" class="item-att-size"/>
+        </div>
+
+      </div>  
+
+    <label class="item-header">Attributes</label>
+      {{!-- This is all the main attributes guts, smarts, brawns --}}
+      <div class="item-row">
+
+        <div class="item-att">
+          <label for="system.guts.value"> Guts:</label>
+          <input type="number" name="system.guts.value" value="{{system.guts.value}}" data-dtype="Number" class="item-att-size" />
+          <span>/</span>
+          <input type="number" name="system.guts.max" value="{{system.guts.max}}" data-dtype="Number" class="item-att-size"/>
+        </div>
+
+        <div class="item-att">
+          <label for="system.smarts.value"> Smarts:</label>
+          <input type="number" name="system.smarts.value" value="{{system.smarts.value}}" data-dtype="Number" class="item-att-size"/>
+          <span>/</span>
+          <input type="number" name="system.smarts.max" value="{{system.smarts.max}}" data-dtype="Number" class="item-att-size"/>
+        </div>
+
+         <div class="item-att">
+          <label for="system.brawn.value"> Brawn:</label>
+          <input type="number" name="system.brawn.value" value="{{system.brawn.value}}" data-dtype="Number" class="item-att-size"/>
+          <span>/</span>
+          <input type="number" name="system.brawn.max" value="{{system.brawn.max}}" data-dtype="Number" class="item-att-size"/>
+        </div>
+        
+      </div>
+        
+  </div>
+        
+          
+
+
+    
+    
+
+      
      
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-    <div class="text bio">
-
-      {{editor system.biography target="system.biography" button=true owner=owner editable=editable}}
-    </div>
+   
+    
   
     
       
@@ -20,6 +73,7 @@
     
 
   
+  </section>
   </section>
 </form>
 

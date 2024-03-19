@@ -86,11 +86,21 @@
         "items":""
         
       }
-      }
-    },
+      },
+
     "npc": {
-      "templates": ["base"]
-      
+        "templates": ["base"],
+        "npcStuff":{
+          "InitiativeValue": {
+            "value":1,
+            "min":0,
+            "max":10},
+          "Armor":{
+            "value":1,
+            "min":0,
+            "max":10}
+        }
+      }
     }
   },
   "Item": {

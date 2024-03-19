@@ -15,6 +15,72 @@
 
 
 }
+/* I'm putting all the npc header stuff below here*/
+.flex-header
+{
+   display: flex;
+   flex-direction: column;
+}
+.item-header
+{
+   font-size: 50px;
+   align-self: center;
+}
+.item-row
+{
+   display: flex;
+   
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: baseline;
+   flex-grow: 1;
+   column-gap: 10px;
+   
+}
+.item-name
+{
+   display: flex;
+   flex-direction: row;
+   font-size: 20px;
+   
+}
+.item-initiative
+{
+   display: flex;
+   flex-direction: row;
+   column-gap: 10px;
+   font-size: 20px;
+   
+}
+.item-armor
+{
+   display: flex;
+   flex-direction: row;
+   justify-self: right;
+   font-size: 20px;
+}
+.item-att
+{
+display: flex;
+flex-direction: row;
+font-size: 20px;
+}
+.item-att-size
+{
+   max-width: 100px;
+   min-width: 50px;
+}
+/* NPC header stufff ENDS here */
+
+/* NPC body stuff STARTS here */
+
+
+
+
+
+
+/* NPC body stuff ENDS here */
+
 
 .flex,
 .flex-row-center
@@ -42,9 +108,19 @@
 {
    display: flex;
    flex-flow: column;
-   justify-content: center;
+   justify-content:space-evenly;
    flex-direction: column;
+   justify-self: center;
+   justify-items: center;
    
+}
+.flex-row-evenspace
+{
+   display: flex;
+   flex-flow: row;
+   justify-content: space-evenly;
+   flex-direction: row;
+   column-gap: 50px;
 }
 .flex-col-right
 {
