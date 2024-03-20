@@ -1,0 +1,25 @@
+<section class="body">
+<form class="{{cssClass}}" autocomplete="off">
+   {{!-- Header --}}
+
+  <header class="sheet-header">
+    
+    
+    <div class="flexcol">
+      <div class="flexrow">
+        <label class="item-header">Name</label>
+        <label class="item-header">Path</label>
+      </div>
+      <div class="flexrow">
+        <input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+        <input name="system.whisper.path" type="text" value="{{system.whisper.path}}" placeholder=""/>
+      </div>
+      <label class="item-header">Description</label>
+      {{editor system.whisper.base.description target="system.whisper.base.description" button=true owner=owner editable=editable}}
+    </div>
+      
+   
+  </header>
+
+</form>
+</section>
