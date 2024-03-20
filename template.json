@@ -111,14 +111,15 @@
     "templates": {
       "base": {
         "description": "",
-        "damage":{
-          "value": 1
-        }
+        "name":""
       }
     },
     "item": {
       "templates": ["base"],
-      "quantity": 1
+      "quantity": 1,
+      "ability": "",
+      "damage": 0
+
       
     },
     "whisper": {
