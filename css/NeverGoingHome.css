@@ -118,7 +118,14 @@ font-size: 20px;
 /* NPC body stuff ENDS here */
 
 /* ITEM sheet stuff STARTS here */
+.item-sheet-row
+{
+display: flex;
+flex-flow: row;
+justify-content:space-evenly;
 
+
+}
 
 
 
