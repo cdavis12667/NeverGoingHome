@@ -99,7 +99,9 @@
             "value":1,
             "min":0,
             "max":10},
-            "abilities":""
+            "abilities":"",
+            "reward":"",
+            "weapons":""
         }
       }
     }
