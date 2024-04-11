@@ -14,5 +14,26 @@
   },
   "esmodules": ["module/nevergoinghome.mjs"],
   "styles": ["css/nevergoinghome.css"],
-  "socket": false
+  "socket": false,
+  "packs":[
+    {
+      "label": "Sheet Manual",
+      "type": "JournalEntry",
+      "name": "sheet-manual",
+      "path": "packs/sheet-manual.db",
+      "system": "nevergoinghome",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Playing Cards",
+      "type": "Card Stack",
+      "name": "card-pack",
+      "path": "packs/card-pack.db",
+      "system": "nevergoinghome",
+      "private": false,
+      "flags": {}
+    }
+
+  ]
 }

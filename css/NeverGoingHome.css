@@ -308,6 +308,7 @@ justify-content:space-evenly;
    background:tan;
 }
 .text,
+
 .text-big
 {
    font-size: 50px;
@@ -340,7 +341,6 @@ background-color: tan;
    min-height: 250px;
    min-width: 200px;
    background: tan;
-   
 }
 
 
