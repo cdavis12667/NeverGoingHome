@@ -24,16 +24,8 @@
       "system": "nevergoinghome",
       "private": false,
       "flags": {}
-    },
-    {
-      "label": "Playing Cards",
-      "type": "Card Stack",
-      "name": "card-pack",
-      "path": "packs/card-pack.db",
-      "system": "nevergoinghome",
-      "private": false,
-      "flags": {}
     }
+    
 
   ]
 }
