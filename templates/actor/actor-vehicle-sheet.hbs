@@ -2,7 +2,7 @@
 <section class="body">
   {{!-- Sheet Header --}}
   <div class="flex-header">
-    <label class="item-header">NPC Sheet</label>
+    <label class="item-header">Vehicle Sheet</label>
     {{!-- This is name armor and initiative --}}
       <div class="item-row">
 
@@ -58,7 +58,6 @@
     <div class="item-row">
       <label class="label-body">Skills</label>
       <label class="label-body">Abilities</label>
-      <label class="label-body">Whispers</label>
     </div>
 
     <div class="item-row-body">
@@ -130,30 +129,7 @@
       <div class="item-write-box">
         {{editor system.vehicleStuff.abilities target="system.vehicleStuff.abilities" button=true owner=owner editable=editable}}
       </div>
-      <div class="flex flex-col-whisper">
-      <div class="flex flex-row-whisper">
-        <input type="checkbox" name="system.whisper.wcheck" {{checked system.whisper.wcheck}}>
-        <label for="system.whisper.path"> Path: </label>
-        <input name="system.whisper.path" type="text" value="{{system.whisper.path}}"/>
-      </div>
-      <div class="flex flex-row-whisper">
-        <label for="system.whisper.value"> Rituals: </label>
-        <input type="number" name="system.whisper.value" value="{{system.whisper.value}}" data-dtype="Number"/>
-      </div>
-        {{editor system.whisper.desc target="system.whisper.desc" button=true owner=owner editable=editable}}
-
-        <div class="flex flex-row-whisper">
-        <input type="checkbox" name="system.whisperOne.wcheck" {{checked system.whisperOne.wcheck}}>
-        <label for="system.whisperOne.path"> Path: </label>
-        <input name="system.whisperOne.path" type="text" value="{{system.whisperOne.path}}"/>
-      </div>
-      <div class="flex flex-row-whisper">
-        <label for="system.whisperOne.value"> Rituals: </label>
-        <input type="number" name="system.whisperOne.value" value="{{system.whisperOne.value}}" data-dtype="Number"/>
-      </div>
-        {{editor system.whisperOne.desc target="system.whisperOne.desc" button=true owner=owner editable=editable}}  
-      </div>
-    </div>
+      
       
         
 
