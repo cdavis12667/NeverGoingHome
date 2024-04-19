@@ -57,6 +57,7 @@
    <div class="flex-header">
     <div class="item-row">
       <label class="label-body">Skills</label>
+      <label class="label-body"> Image </label>
       <label class="label-body">Abilities</label>
     </div>
 
@@ -125,14 +126,13 @@
           <input type="number" name="system.Transport.value" value="{{system.Transport.value}}" data-dtype="Number"/>
         </div>
       </div>
-
+        <div class="flexcol">
+          
+          <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="300" width="300"/>
+        </div>
       <div class="item-write-box">
         {{editor system.vehicleStuff.abilities target="system.vehicleStuff.abilities" button=true owner=owner editable=editable}}
       </div>
-      
-      
-        
-
 
     </div>
 
@@ -140,24 +140,24 @@
    </div>
   </section>
   <section class="mid-body">
-    <div class="item-row">
+    <div class="item-col">
       <div class="flexcol">
           <label class="label-body"> Reward </label>
           {{editor system.vehicleStuff.reward target="system.vehicleStuff.reward" button=true owner=owner editable=editable}}  
         </div>
+        
         <div class="flexcol">
-          <label class="label-body"> Image </label>
-          <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-        </div>
-        </div class="flexcol">
           <label class="label-body"> Description </label>
           {{editor system.biography target="system.biography" button=true owner=owner editable=editable}} 
+        </div>
+        <div class="flexcol">
+          <label class="label-body">Weapon</label>
+          {{editor system.vehicleStuff.weapons target="system.vehicleStuff.weapons" button=true owner=owner editable=editable}} 
         </div>
         
     </div>
     
-    <label class="label-body">Weapon</label>
-    {{editor system.vehicleStuff.weapons target="system.vehicleStuff.weapons" button=true owner=owner editable=editable}} 
+    
     
    
 
