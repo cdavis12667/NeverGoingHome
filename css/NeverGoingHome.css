@@ -348,7 +348,7 @@ padding: 0%;
 
 .body
 {
-background-image: url("../assets/OldPaper.jpg");
+background-image: url("../assets/BackgroundAsset.PNG");
 font-family: "ErikaOrmig";
 font-weight: bold;
 background-color: tan;
@@ -361,7 +361,7 @@ background-color: tan;
    width: 100%;
    min-height: 250px;
    min-width: 200px;
-   background: tan;
+   background: rgb(221, 193, 149);
 }
 
 
