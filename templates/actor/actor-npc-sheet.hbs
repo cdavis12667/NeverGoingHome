@@ -2,7 +2,11 @@
 <section class="body">
   {{!-- Sheet Header --}}
   <div class="flex-header">
+    <div class=".flex flex-col-center">
     <label class="item-header">NPC Sheet</label>
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+    </div>
+    
     {{!-- This is name armor and initiative --}}
       <div class="item-row">
 
@@ -61,7 +65,7 @@
       <label class="label-body">Whispers</label>
     </div>
 
-    <div class="item-row-body">
+    <div class="npc-row-body">
       <div class="flex-col-skills-npc">
         <div class=" flex flex-row-skills">
           <input type="checkbox" name="system.Athletics.check" {{checked system.Athletics.check}}>
@@ -164,24 +168,24 @@
    </div>
   </section>
   <section class="mid-body">
-    <div class="item-row">
+    <div class="item-col">
       <div class="flexcol">
           <label class="label-body"> Reward </label>
           {{editor system.npcStuff.reward target="system.npcStuff.reward" button=true owner=owner editable=editable}}  
         </div>
+        
         <div class="flexcol">
-          <label class="label-body"> Image </label>
-          <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-        </div>
-        </div class="flexcol">
           <label class="label-body"> Description </label>
           {{editor system.biography target="system.biography" button=true owner=owner editable=editable}} 
+        </div>
+        <div class="flexcol">
+          <label class="label-body">Weapon</label>
+          {{editor system.npcStuff.weapons target="system.npcStuff.weapons" button=true owner=owner editable=editable}} 
         </div>
         
     </div>
     
-    <label class="label-body">Weapon</label>
-    {{editor system.npcStuff.weapons target="system.npcStuff.weapons" button=true owner=owner editable=editable}} 
+    
     
    
 

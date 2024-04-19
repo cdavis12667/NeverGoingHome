@@ -115,6 +115,18 @@ font-size: 20px;
    margin-right: 10px;
    
 }
+.npc-row-body
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: stretch;
+   flex-grow: 1;
+   column-gap: 30px;
+   margin-left: 10px;
+   margin-right: 10px;
+   
+}
 .item-write-box
 {
    display: flexbox;
@@ -184,6 +196,7 @@ justify-content:space-evenly;
    flex-direction: column;
    justify-self: center;
    justify-items: center;
+   align-items: center;
    
 }
 .flex-row-evenspace
