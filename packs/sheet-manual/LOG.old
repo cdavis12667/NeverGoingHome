@@ -1,3 +1,5 @@
-2024/04/18-09:22:02.675 1695c Recovering log #27
-2024/04/18-09:22:02.678 1695c Delete type=0 #27
-2024/04/18-09:22:02.678 1695c Delete type=3 #26
+2024/04/19-10:42:47.760 30d14 Log #31: 0 ops saved to Table #32 OK
+2024/04/19-10:42:47.761 30d14 Archiving C:\Users\cdavi\AppData\Local\FoundryVTT\Data\systems\nevergoinghome\packs\sheet-manual/000031.log: OK
+2024/04/19-10:42:47.761 30d14 Table #23: 5 entries OK
+2024/04/19-10:42:47.763 30d14 Archiving C:\Users\cdavi\AppData\Local\FoundryVTT\Data\systems\nevergoinghome\packs\sheet-manual/MANIFEST-000030: OK
+2024/04/19-10:42:47.766 30d14 **** Repaired leveldb C:\Users\cdavi\AppData\Local\FoundryVTT\Data\systems\nevergoinghome\packs\sheet-manual; recovered 1 files; 2073 bytes. Some data may have been lost. ****
