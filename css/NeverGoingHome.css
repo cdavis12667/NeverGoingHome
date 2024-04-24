@@ -245,21 +245,18 @@ justify-content:space-evenly;
 {
    display: flex;
    flex-flow: column;
-   align-content:normal;
    justify-content: left;
    justify-items: left;
-   justify-self: left;
-   -ms-flex-item-align: start;
    flex-direction:column;
    column-gap: 30px;
    margin-right: 50px;
+   align-items: left;
 }
 .flex-col-whisper
 {
    display: flex;
-   flex-direction: column;
+   align-items: center;
    flex-flow: column;
-   
 }
 .flex-col-level
 {
@@ -362,6 +359,7 @@ justify-content:space-evenly;
 .text-medium
 {
    font-size: 20px;
+   align-self: center;
 }
 app,
 .window-app .window-content
