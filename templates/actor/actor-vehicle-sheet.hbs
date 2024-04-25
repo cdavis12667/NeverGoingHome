@@ -55,14 +55,11 @@
   {{!-- Sheet Body --}}
   <section class="sheet-body">
    <div class="flex-header">
-    <div class="item-row">
-      <label class="label-body">Skills</label>
-      <label class="label-body"> Image </label>
-      <label class="label-body">Abilities</label>
-    </div>
+    
 
     <div class="item-row-body">
       <div class="flex-col-skills-npc">
+        <label class="label-body">Skills</label>
         <div class=" flex flex-row-skills">
           <input type="checkbox" name="system.Athletics.check" {{checked system.Athletics.check}}>
           <label for="system.Athletics.value"> (Brawn) </label>
@@ -126,13 +123,18 @@
           <input type="number" name="system.Transport.value" value="{{system.Transport.value}}" data-dtype="Number"/>
         </div>
       </div>
-        <div class="flexcol">
-          
+        <div class="npc-col-center">
+          <label class="label-body"> Image </label>
           <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="300" width="300"/>
         </div>
-      <div class="item-write-box">
-        {{editor system.vehicleStuff.abilities target="system.vehicleStuff.abilities" button=true owner=owner editable=editable}}
-      </div>
+          <div class="npc-col-center">
+            <label class="label-body">Abilities</label>
+            <div class="item-write-box">
+            {{editor system.vehicleStuff.abilities target="system.vehicleStuff.abilities" button=true owner=owner editable=editable}}
+            </div>
+
+          </div>
+      
 
     </div>
 

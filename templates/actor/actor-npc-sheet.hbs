@@ -59,14 +59,11 @@
   {{!-- Sheet Body --}}
   <section class="sheet-body">
    <div class="flex-header">
-    <div class="item-row">
-      <label class="label-body">Skills</label>
-      <label class="label-body">Abilities</label>
-      <label class="label-body">Whispers</label>
-    </div>
+    
 
     <div class="npc-row-body">
       <div class="flex-col-skills-npc">
+        <label class="label-body">Skills</label>
         <div class=" flex flex-row-skills">
           <input type="checkbox" name="system.Athletics.check" {{checked system.Athletics.check}}>
           <label for="system.Athletics.value"> (Brawn) </label>
@@ -130,11 +127,16 @@
           <input type="number" name="system.Transport.value" value="{{system.Transport.value}}" data-dtype="Number"/>
         </div>
       </div>
+          <div class="npc-col-center">
+              <label class="label-body">Abilities</label>
+              <div class="item-write-box">
+              {{editor system.npcStuff.abilities target="system.npcStuff.abilities" button=true owner=owner editable=editable}}
+              </div>
 
-      <div class="item-write-box">
-        {{editor system.npcStuff.abilities target="system.npcStuff.abilities" button=true owner=owner editable=editable}}
-      </div>
+          </div>
+      
       <div class="flex flex-col-whisper">
+        <label class="label-body">Whispers</label>
       <div class="flex flex-row-whisper">
         <input type="checkbox" name="system.whisper.wcheck" {{checked system.whisper.wcheck}}>
         <label for="system.whisper.path"> Path: </label>

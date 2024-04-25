@@ -127,12 +127,12 @@ font-size: 20px;
    margin-right: 10px;
    
 }
-.item-write-box
+.npc-col-center
 {
-   display: flexbox;
-   min-height: 100px;
-   min-height: 100px;
-   justify-self: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  justify-items: center;
    
 }
 .flex-col-skills-npc
@@ -141,9 +141,10 @@ font-size: 20px;
    flex-flow: column;
    align-content:normal;
    justify-self: left;
-   column-gap: 20px;
+   column-gap: 0px;
    row-gap: 0px;
-   margin-right: 100px;
+   margin-right: 10px;
+   align-items: stretch;
 }
 
 
