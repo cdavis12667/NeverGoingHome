@@ -133,6 +133,7 @@ font-size: 20px;
   flex-flow: column;
   justify-content: flex-start;
   justify-items: center;
+  align-items: center;
    
 }
 .flex-col-skills-npc
