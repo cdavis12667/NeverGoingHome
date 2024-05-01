@@ -301,6 +301,17 @@ justify-content:space-evenly;
    align-items: center;
    
 }
+.npc-row-header
+{
+   display: flex;
+   flex-flow: row;
+   flex-wrap: nowrap;
+   justify-content:flex-start;
+   margin-left: 10px;
+   margin-right: 10px;
+   align-items: center;
+   
+}
 .flex-row-stats
 {
    display: flex;
