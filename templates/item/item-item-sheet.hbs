@@ -13,11 +13,12 @@
         <input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
       </div>
       <label class="item-header">Description</label>
-      {{editor system.item.base.description target="system.item.base.description" button=true owner=owner editable=editable}}
+      
     </div>
       
    
   </header>
-
+  
 </form>
+{{editor system.item.base.description target="system.item.base.description" button=true owner=owner editable=editable}}
 </section>
