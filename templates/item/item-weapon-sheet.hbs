@@ -1,0 +1,28 @@
+<section class="body">
+<form class="{{cssClass}}" autocomplete="off">
+   {{!-- Header --}}
+
+  <header class="sheet-header">
+    
+    
+    <div class="flexcol">
+      <div class="item-row">
+        <label class="item-header">Damage</label>
+        <label class="item-header">Name</label>
+        <label class="item-header">Ability</label>
+      </div>
+      <div class="flexrow">
+        <input name="system.weapon.damage" type="number" value="{{system.weapon.damage}}" placeholder="0"/>
+        <input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+        <input name="system.weapon.ability" type="text" value="{{system.weapon.ability}}" placeholder=""/>
+      </div>
+      <label class="item-header">Description</label>
+      
+    </div>
+      
+   
+  </header>
+
+</form>
+{{editor system.weapon.base.description target="system.weapon.base.description" button=true owner=owner editable=editable}}
+</section>

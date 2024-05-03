@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["character", "npc"],
+    "types": ["character", "npc", "vehicle"],
     "templates": {
       "base": {
         "guts": {
@@ -86,30 +86,65 @@
         "items":""
         
       }
-      }
-    },
+      },
+
     "npc": {
-      "templates": ["base"]
-      
+        "templates": ["base"],
+        "npcStuff":{
+          "InitiativeValue": {
+            "value":1,
+            "min":0,
+            "max":10},
+          "Armor":{
+            "value":1,
+            "min":0,
+            "max":10},
+            "abilities":"",
+            "reward":"",
+            "weapons":""
+        }
+      },
+      "vehicle": {
+        "templates": ["base"],
+        "vehicleStuff":{
+          "InitiativeValue": {
+            "value":1,
+            "min":0,
+            "max":10},
+          "Armor":{
+            "value":1,
+            "min":0,
+            "max":10},
+            "abilities":"",
+            "reward":"",
+            "weapons":""
+        }
+      }
     }
   },
   "Item": {
-    "types": ["item", "whisper"],
+    "types": ["item", "whisper", "weapon"],
     "templates": {
       "base": {
         "description": "",
-        "damage":{
-          "value": 1
-        }
+        "name":""
       }
     },
     "item": {
       "templates": ["base"],
       "quantity": 1
-      
     },
     "whisper": {
-      "templates": ["base"]
+      "templates": ["base"],
+      "path":""
+    },
+    "weapon": {
+      "templates": ["base"],
+      "quantity": 1,
+      "ability": "",
+      "damage": 0
+
+      
     }
     
   }
