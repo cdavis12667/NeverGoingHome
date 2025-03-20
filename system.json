@@ -7,10 +7,10 @@
   "id": "nevergoinghome",
   "title": "Never Going Home",
   "description": "A World War One Game Of Supernatural Horror",
-  "version": "0.2",
+  "version": "0.3",
   "compatibility": {
-    "minimum": 11,
-    "verified": "11.315"
+    "minimum": 12,
+    "verified": "12.331"
   },
   "esmodules": ["module/nevergoinghome.mjs"],
   "styles": ["css/nevergoinghome.css"],
